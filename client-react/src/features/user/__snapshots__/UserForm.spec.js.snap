@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserForm snapshot renders 1`] = `
+<div
+  className="row justify-content-center"
+>
+  <div
+    className="col-md-6"
+  >
+    <form
+      onSubmit={[Function]}
+    >
+      <div
+        className="mb-3"
+      >
+        <label
+          className="form-label"
+          htmlFor="username"
+        >
+          Username
+        </label>
+        <input
+          className="form-control"
+          id="username"
+          name="username"
+          onChange={[Function]}
+          required={true}
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        className="mb-3"
+      >
+        <label
+          className="form-label"
+          htmlFor="password"
+        >
+          Password
+        </label>
+        <input
+          className="form-control"
+          id="password"
+          name="password"
+          onChange={[Function]}
+          required={true}
+          type="password"
+          value=""
+        />
+      </div>
+      <button
+        className="btn btn-primary"
+        type="submit"
+      >
+        test
+      </button>
+    </form>
+  </div>
+</div>
+`;

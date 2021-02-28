@@ -13,7 +13,7 @@ services:
       DB_URL: mongodb://db:27017
 
   nginx:
-    build: ./client
+    build: ./client-react
     container_name: vehiclezen_nginx
     ports:
       - "9999:80"

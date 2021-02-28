@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputGroup snapshot renders 1`] = `
+<div
+  className="mb-3"
+>
+  <label
+    className="form-label"
+    htmlFor="test"
+  >
+    Test
+  </label>
+  <input
+    className="form-control"
+    id="test"
+    name="test"
+    onChange={[Function]}
+    required={true}
+    type="text"
+    value="value"
+  />
+</div>
+`;
