@@ -8,31 +8,37 @@ describe("InputGroup", () => {
   test("snapshot renders", () => {
     const component = renderer.create(<InputGroup name="test" onChange={() => {}} value="value" />);
     let tree = component.toJSON();
+
     expect(tree).toMatchSnapshot();
   });
 
   test("renders input with default type text", () => {
     const component = shallow(<InputGroup name="test" onChange={() => {}} value="value" />);
+
     expect(component.find("input").prop("type")).toBe("text");
   });
 
   test("renders input with given value", () => {
     const component = shallow(<InputGroup name="test" onChange={() => {}} value="value" />);
+
     expect(component.find("input").prop("value")).toBe("value");
   });
 
   test("renders input with given name", () => {
     const component = shallow(<InputGroup name="test" onChange={() => {}} value="value" />);
+
     expect(component.find("input").prop("name")).toBe("test");
   });
 
   test("renders input with name as id", () => {
     const component = shallow(<InputGroup name="test" onChange={() => {}} value="value" />);
+
     expect(component.find("input").prop("id")).toBe("test");
   });
 
   test("renders label as capitalized name", () => {
     const component = shallow(<InputGroup name="test" onChange={() => {}} value="value" />);
+
     expect(component.find("label").text()).toBe("Test");
   });
 

@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddVehicleForm snapshot renders 1`] = `
+<form
+  className="py-5 col-md-4"
+  onSubmit={[Function]}
+>
+  <div
+    className="mb-3"
+  >
+    <label
+      className="form-label"
+      htmlFor="make"
+    >
+      Make
+    </label>
+    <input
+      className="form-control"
+      id="make"
+      name="make"
+      onChange={[Function]}
+      required={true}
+      type="text"
+      value=""
+    />
+  </div>
+  <div
+    className="mb-3"
+  >
+    <label
+      className="form-label"
+      htmlFor="model"
+    >
+      Model
+    </label>
+    <input
+      className="form-control"
+      id="model"
+      name="model"
+      onChange={[Function]}
+      required={true}
+      type="text"
+      value=""
+    />
+  </div>
+  <div
+    className="mb-3"
+  >
+    <label
+      className="form-label"
+      htmlFor="year"
+    >
+      Year
+    </label>
+    <input
+      className="form-control"
+      id="year"
+      name="year"
+      onChange={[Function]}
+      required={true}
+      type="number"
+      value=""
+    />
+  </div>
+  <div
+    className="mb-3"
+  >
+    <button
+      className="btn btn-primary"
+    >
+      Add new
+    </button>
+  </div>
+</form>
+`;

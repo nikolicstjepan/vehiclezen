@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DeleteButton snapshot renders 1`] = `
+<button
+  className="btn btn-danger"
+  onClick={[Function]}
+>
+  Delete
+</button>
+`;

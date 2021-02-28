@@ -15,7 +15,7 @@ export default function VehiclesListTable({ vehicles, loading }) {
   }
 
   return (
-    <div class="table-responsive">
+    <div className="table-responsive">
       <table className="table table-striped table-bordered table-sm">
         <thead>
           <tr>
@@ -38,12 +38,5 @@ export default function VehiclesListTable({ vehicles, loading }) {
 }
 
 function Loading() {
-  return new Array(10).fill(true).map((_, i) => (
-    <tr key={i} style={{ height: "47px" }}>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  ));
+  return new Array(10).fill(true).map((_, i) => <tr key={i} style={{ height: "47px" }}></tr>);
 }
