@@ -2,7 +2,9 @@
 
 ## How to run
 
-`docker-compose up -d`
+1. `git clone https://github.com/nikolicstjepan/vehiclezen.git`
+2. `cd vehiclezen`
+3. `docker-compose up -d`
 
 open [http://localhost:9999](http://localhost:9999)
 
