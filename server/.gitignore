@@ -1,0 +1,6 @@
+node_modules
+dist
+globalConfigMongo.json
+uploads/*
+.vscode
+.env

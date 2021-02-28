@@ -1,0 +1,8 @@
+{
+  "testRegex": "((\\.|/*.)(spec))\\.js?$",
+  "verbose": false,
+  "globalSetup": "./jest-setup.js",
+  "globalTeardown": "./jest-teardown.js",
+  "testEnvironment": "./jest-mongo.js",
+  "testPathIgnorePatterns": ["/node_modules/"]
+}

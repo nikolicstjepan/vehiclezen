@@ -1,0 +1,28 @@
+version: "3"
+services:
+
+  server:
+    build: ./server
+    container_name: vehiclezen_server
+    ports:
+      - "6200:80"
+    depends_on:
+      - db
+    restart: on-failure
+    environment:
+      DB_URL: mongodb://db:27017
+
+  nginx:
+    build: ./client
+    container_name: vehiclezen_nginx
+    ports:
+      - "9999:80"
+    depends_on:
+      - server
+      - db
+    restart: on-failure
+
+  db:
+    container_name: vehiclezen_db
+    image: 'mongo:latest'
+    restart: on-failure
